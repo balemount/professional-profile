@@ -1,0 +1,132 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 5em;
+    margin-left: 10em;
+    margin-right: 10em;
+}
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    width: 200px;
+    font-weight: 600;
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: #2d2c2c;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 40px;
+    padding: 20px;
+    background: white;
+    transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
+}
+
+button:hover {
+    background: #2d2c2c;
+    color: white;
+    transform: scale(1.15);
+}
+
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.namecard {
+    width: 100%;
+    min-height: 255px;
+    height: auto;
+    padding: 0;  
+    background: linear-gradient(rgba(0, 0, 0, 0.70), rgba(22, 22, 22, 0.70));
+    background-size: cover;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch; 
+    box-shadow: 0px 0px 100px #030303;
+    gap: 20px;
+    border-radius: 35px;
+    margin-bottom: 20px;
+}
+
+.namecard img {
+    border-radius: 35px 0 0 35px;
+    object-fit: cover;
+    height: 100%; 
+    width: 255px;
+    max-width: 255px;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.namecard-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;  
+}
+
+.namecard-text h1,
+.namecard-text h2,
+.namecard-text h3 {
+    margin: 0;  
+    line-height: 1.5;  
+}
+
+.namecard-text h1 {
+    font-size: 3.0em;
+    --font-weight: 900;
+}
+
+.namecard-text h2 {
+    font-size: 1.5em;
+}
+
+.namecard-text h3 {
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.intro {
+    width: 100%;
+    min-height: 400px;
+    height: auto;
+    padding: 0;  
+    background: linear-gradient(rgba(0, 0, 0, 0.70), rgba(22, 22, 22, 0.70));
+    background-size: cover;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    align-items: center; 
+    box-shadow: 0px 0px 100px #030303;
+    gap: 0;
+    border-radius: 35px;
+    display: flex;
+    flex-direction: column;
+}
+
+.intro h1 {
+    font-size: 3em;
+    --font-weight: 700;
+    display: flex;
+    gap: 5px;  
+}
+
+.intro h2 {
+    margin-top: 0;
+}
+
+.intro p {
+    margin-top: 0;
+    width: 90%;
+    font-size: 1.5em;
+    text-align: center;
+}
